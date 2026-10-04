@@ -6,19 +6,19 @@
 // llamamos el boton que creamos en el index
 const btntema = document.getElementById('btn-toggle-tema');
 
- // [Comentario obligatorio: Explica por qué seleccionamos el body directamente con document.body]
+//seleccionamos todo el body, toda la pagina
 const body = document.body;
 
 // 2. MANEJO DE EVENTOS[cite: 2]
-// [Comentario obligatorio: Explica qué es el evento 'click' y qué papel juega la función anónima que le pasamos]
+// cuando el usuario haga "click" se ejecutara la funcion que da el cambio de tema en la pagina
 btntema.addEventListener('click', function() {
 
-// [Comentario obligatorio: Explica qué hace exactamente el método classList.toggle('tema-oscuro')]
+// cambia el tema de la pagina a oscuro
 
 body.classList.toggle('tema-oscuro');
 
 // Cambiar el texto del botón dependiendo del estado
-if (body.classList.contains('.tema-oscuro')) {
+if (body.classList.contains('tema-oscuro')) {
 btntema.textContent = "☀️ Modo Claro";
 } else {
 btntema.textContent = "🌙 Modo Oscuro";
@@ -47,5 +47,5 @@ mensaje = "¡Buenas noches! Descubre mi trabajo.";
 }
 
 // 3. INYECCIÓN EN EL DOM[cite: 2]
-// [Comentario obligatorio: Explica la diferencia entre textContent e innerHTML y por qué usamos textContent aquí]
+// [Comentario obligatorio: text content lee texto plano, inner lee texto e interpreta código html. Aqui usamos text content porque lo que se quiere es llamar a una variable, no copiar texto con códigos html]
 textoSaludo.textContent = mensaje;
