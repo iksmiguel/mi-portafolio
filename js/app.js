@@ -46,6 +46,7 @@ mensaje = "¡Buenas tardes! Gracias por visitar mi perfil.";
 mensaje = "¡Buenas noches! Descubre mi trabajo.";
 }
 
+
 // 3. INYECCIÓN EN EL DOM[cite: 2]
 // [Comentario obligatorio: text content lee texto plano, inner lee texto e interpreta código html. Aqui usamos text content porque lo que se quiere es llamar a una variable, no copiar texto con códigos html]
 textoSaludo.textContent = mensaje;
