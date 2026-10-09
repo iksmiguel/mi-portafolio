@@ -53,4 +53,4 @@ textoSaludo.textContent = mensaje;
 
 const carrito =[{id: 1, item:"Manzana"}, {id: 2, item:"Pera"}];
 
-LocalStorage.setItem("Carrito", carrito)
+LocalStorage.setItem("Carrito", carrito);
