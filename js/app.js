@@ -51,6 +51,7 @@ mensaje = "¡Buenas noches! Descubre mi trabajo.";
 // [Comentario obligatorio: text content lee texto plano, inner lee texto e interpreta código html. Aqui usamos text content porque lo que se quiere es llamar a una variable, no copiar texto con códigos html]
 textoSaludo.textContent = mensaje;
 
+
 const carrito =[{id: 1, item:"Manzana"}, {id: 2, item:"Pera"}];
 
-localStorage.setItem("Carrito", carrito);
+localStorage.setItem("Carrito", JSON.stringify(carrito));
